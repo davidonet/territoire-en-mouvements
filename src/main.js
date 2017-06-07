@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import global from './assets/paths'
 
 Vue.config.productionTip = false
 
@@ -11,5 +12,10 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: { App },
+  data() {
+    return {
+      paths: global.paths
+    }
+  }
 })
