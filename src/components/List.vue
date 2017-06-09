@@ -4,7 +4,7 @@
   <router-link to="/">home</router-link>
   <ul>
     <li v-for="item in town">
-      <router-link :to="item">{{ item }}</router-link>
+      <router-link :to="item.link">{{ item.name }}</router-link>
     </li>
   </ul>
 </div>
@@ -18,7 +18,10 @@ export default {
       town: []
     }
     for (let t in this.$root.paths) {
-      ret.town.push(t)
+      ret.town.push({
+        name: this.$root.paths[t].town,
+        link: '/play/' + t
+      })
     }
     return ret
   }

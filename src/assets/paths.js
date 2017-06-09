@@ -2,7 +2,7 @@ module.exports.paths = {
   'villeneuve-les-maguelone': {
     'isActive': true,
     'town': 'Villeneuve-lès-Maguelone',
-    'location': '43.531437,3.864179',
+    'location': [43.531437, 3.864179],
     'presentation': 'Le point de départ est sur la Place de l’Église, vers le fond du parking sur la droite lorsqu’on vient de l’Église et que l’on se dirige vers l’Avenue du Chapitre. Le point départ est signalé par un repère visuel.',
     'courtesy': 'Créé par Patrice Barthès en collaboration avec Christophe Héral Avec la participation de Cab’cabaret et de Thomas Rondony, architecte. Remerciements particuliers à la Mairie de Villeneuve-lès-Maguelone, au Petit Troc, à Monique Avinens, Pierre Berthès, Sylviane Compan, Alain Guerrero pour leur contribution à la création de ce parcours.',
     'audiourl': '/audio/tem_villeneuve_v6.mp3',
@@ -47,7 +47,7 @@ module.exports.paths = {
   'murviel-les-montpellier': {
     'isActive': true,
     'town': 'Murviel-lès-Montpellier',
-    'location': '43.6064513,3.7365358',
+    'location': [43.6064513, 3.7365358],
     'presentation': 'Le point de départ est devant la Fontaine Romaine en contrebas de la Route de Bel Air, le point départ est signalé par un repère visuel.',
     'courtesy': 'Créé par Patrice Barthès en collaboration avec Jerôme Hoffmann, compositeur.  Remerciements particuliers à la Mairie de Murviel lès Montpellier,  à Monsieur André Sudre et à Monsieur Jean Marc Touzard pour leur contribution à la création de ce parcours. La musique du générique est de Christophe Héral.',
     'audiourl': '/audio/tem_murviel.mp3',
@@ -99,7 +99,7 @@ module.exports.paths = {
   'sussargues': {
     'isActive': true,
     'town': 'Sussargues',
-    'location': '43.7128832,4.0019819',
+    'location': [43.7128832, 4.0019819],
     'presentation': 'Le point de départ est sur la Place du 14 juillet, à droite en entrant sur la place. Le point de départ est signalé par un repère visuel.',
     'courtesy': 'Créé par Patrice Barthès en collaboration avec le compositeur et musicien Jean Christophe Sirven. Christophe Héral a composé le générique. Remerciements particuliers à la Mairie de Sussargues pour sa complice collaboration.',
     'audiourl': '/audio/tem_sussargues.mp3',
@@ -139,7 +139,7 @@ module.exports.paths = {
   'clapiers': {
     'isActive': true,
     'town': 'Clapiers',
-    'location': '43.652569, 3.894760',
+    'location': [43.652569, 3.894760],
     'presentation': 'Le point de départ est prêt du Parking du Collège François Mitterrand au début du chemin des écoliers, parallèle à l\'Avenue Georges Frêche. Le point de départ est signalé par un visuel spécifique.',
     'courtesy': 'Créé par Patrice Barthès en collaboration avec le compositeur et musicien Frank Rabeyrolles. Christophe Héral a composé les génériques. Avec les participations de Miguel Georgieff et Numa Hambursin. Remerciements à Jean Luc Martineau et Etienne Hamel pour leurs contributions.',
     'audiourl': '/audio/tem_clapiers.mp3',
@@ -197,8 +197,8 @@ module.exports.paths = {
   'saintgeorges': {
     'isActive': true,
     'town': 'Saint Georges d\'Orques',
-    'location': '43.605606, 3.785417',
-    'presentation': '',
+    'location': [43.605606, 3.785417],
+    'presentation': 'Le point de départ au dos du panneau indiquant la sortie de St Georges d\'Orques sur la route de Pignan.',
     'courtesy': 'Créé par Patrice Barthès en collaboration avec le compositeur et musicien Julien Valette. Christophe Héral a composé les génériques.',
     'audiourl': '/audio/tem_saintgeorges.mp3',
     'length': 3966,
