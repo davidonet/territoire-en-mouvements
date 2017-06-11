@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import global from './assets/paths'
+import BootstrapVue from 'bootstrap-vue';
+Vue.use(BootstrapVue);
+
 window.mapboxgl = require('mapbox-gl');
 
 Vue.config.productionTip = false

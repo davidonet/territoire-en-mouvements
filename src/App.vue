@@ -1,11 +1,14 @@
 <template>
-
 <div id="app">
-  <router-view></router-view>
+  <div class="container">
+    <router-view></router-view>
+  </div>
 </div>
 </template>
 
 <script>
+import 'bootswatch/darkly/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
   name: 'app'
 }
