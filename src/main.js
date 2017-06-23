@@ -7,8 +7,6 @@ import global from './assets/paths'
 import BootstrapVue from 'bootstrap-vue';
 Vue.use(BootstrapVue);
 
-window.mapboxgl = require('mapbox-gl');
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
