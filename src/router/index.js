@@ -1,9 +1,9 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Welcome from '@/components/Welcome'
-import List from '@/components/List'
-import Play from '@/components/Play'
-import Partner from '@/components/Partner'
+import Vue from "vue"
+import Router from "vue-router"
+import Welcome from "@/components/Welcome"
+import List from "@/components/List"
+import Play from "@/components/Play"
+import Partner from "@/components/Partner"
 
 Vue.use(Router)
 
@@ -21,16 +21,16 @@ export default new Router({
     }
   },
   routes: [{
-    path: '/',
+    path: "/",
     component: Welcome
   }, {
-    path: '/partner',
+    path: "/partner",
     component: Partner
   }, {
-    path: '/list',
+    path: "/list",
     component: List
   }, {
-    path: '/play/:town?',
+    path: "/play/:town?",
     component: Play
   }]
 })

@@ -25,17 +25,6 @@
 </div>
   </template>
 <style>
-p, li{
-  font-size: 150%;
-  text-align: justify;
-}
-
-h1 {
-  font-size: 400%;
-  margin-bottom: 0.5em;
-  color: #00FF80;
-}
-
 .tem-text {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -45,6 +34,6 @@ h1 {
 </style>
 <script>
 export default {
-  name: 'partner'
+  name: "partner"
 }
 </script>

@@ -2,27 +2,26 @@
 <div class="play">
   <mapbox access-token="pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg" :map-options="{
   style: 'mapbox://styles/davidonet/cj49dn5nh2oda2qn0vq7tluzy',
-  center: location,
+  center: info.location,
   zoom: 17
 }"></mapbox>
   <div class="tem-text">
-
-    <h2>{{ town }}</h2>
-    <p>{{ presentation }}</p>
-    <p>{{ courtesy }}</p>
+    <h2>{{ info.town }}</h2>
+    <p>{{ info.presentation }}</p>
+    <p><small>{{ info.courtesy }}</small></p>
+    <b-button v-on:click="play">Écouter</b-button>
+    <router-link to="/list" class="float-right"> Revenir à la liste</router-link>
   </div>
 </div>
 </template>
-<style>
+<style scoped>
 #map {
   width: 100%;
   height: 300px;
 }
-h2{
+
+h2 {
   margin-bottom: 1em;
-}
-p {
-  text-align: justify;
 }
 
 h1 {
@@ -36,17 +35,23 @@ h1 {
   padding-left: 2em;
   padding-right: 2em;
 }
-
 </style>
 <script>
-import Mapbox from 'mapbox-gl-vue'
+import Mapbox from "mapbox-gl-vue"
+
 export default {
-  name: 'play',
+  name: "play",
   components: {
-    Mapbox
+    Mapbox,
   },
   data() {
-    return this.$root.paths[this.$route.params.town]
+    return {
+      info: this.$root.paths[this.$route.params.town],
+      audioSources: this.$root.paths[this.$route.params.town].audiourl
+    }
+  },
+  methods: {
+    play() {}
   }
 }
 </script>

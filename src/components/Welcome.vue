@@ -21,7 +21,7 @@
   <img :src="'/static/img/w0.jpg'"></img>
   <div class="tem-text">
     <h2>Patrice Barthès : artiste montpelliérain </h2>
-    <p>Chorégraphe et plasticien, Patrice Barthès créé des oeuvres sensibles qui déplacent le regard du spectateur hors de ses repères en usant de dispositifs qui ré-interrogent notre rapport à l'environnement, son actualité et ses représentations. </p>
+    <p>Chorégraphe et plasticien, Patrice Barthès créé des oeuvres sensibles qui déplacent le regard du spectateur hors de ses repères en usant de dispositifs qui ré-interrogent notre rapport à l"environnement, son actualité et ses représentations. </p>
   </div>
   <img :src="'/static/img/w3.jpg'"></img>
   <div class="tem-text">
@@ -33,14 +33,14 @@
 
 
   <mapbox access-token="pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg" :map-options="{
-  style: 'mapbox://styles/davidonet/cj3sji7kk001g2smog1w1oohw',
+  style: "mapbox://styles/davidonet/cj3sji7kk001g2smog1w1oohw",
   center: [3.8999597,43.6056334],
   zoom: 10,
   interactive:false
 }" :nav-control="{show:false}"></mapbox>
 </div>
 </template>
-<style>
+<style scoped>
 #map {
   width: 100%;
   height: 600px;
@@ -68,11 +68,11 @@ h1,h2 {
 </style>
 
 <script>
-import Mapbox from 'mapbox-gl-vue'
+import Mapbox from "mapbox-gl-vue"
 export default {
-  name: 'welcome',
+  name: "welcome",
   components: {
-    'mapbox': Mapbox
+    "mapbox": Mapbox
   },
   data() {
     return {}
