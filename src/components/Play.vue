@@ -10,7 +10,12 @@
     <p>{{ info.presentation }}</p>
     <p><small>{{ info.courtesy }}</small></p>
     <b-button v-on:click="play">Écouter</b-button>
-    <router-link to="/list" class="float-right"> Revenir à la liste</router-link>
+    <b-button v-on:click="$root.sound.stop()">Arrêter</b-button>
+    <router-link to="/list" class="float-right">Revenir à la liste</router-link>
+    <br/>
+    <div v-for="chapter in info.cues" :key="chapter.pos">
+      <b-button variant="link" v-on:click="$root.sound.seek(chapter.pos)">{{chapter.title}}</b-button>
+    </div>
   </div>
 </div>
 </template>
@@ -56,11 +61,14 @@ export default {
   },
   methods: {
     play() {
-      var sound = new Howl({
+      if (this.$root.sound) {
+        this.$root.sound.stop();
+      }
+      this.$root.sound = new Howl({
         src: this.audioSources,
         html5: true
       });
-      sound.play();
+      this.$root.sound.play();
     }
   }
 }

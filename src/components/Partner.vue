@@ -4,9 +4,11 @@
       <h1>Les partenaires de l'aventure</h1>
       <h2>Partenaires de création</h2>
       <ul>
-      <li>Pour la conception digitale : David Olivari (ingénieur informatique) et Adrien Revel (graphiste)</li>
-      <li>Pour les compositions sonores : Christophe Héral, Jérôme Hoffmann, Jean-Christophe Sirven, Franck Rabeyrolles, Julien Valette, Félix Blume</li>
-      <li>Production déléguée L’Atelline</li>
+      <li>Pour la conception digitale : <a href="http://david-o.net">David Olivari</a> (Ingénierie numérique) et <a href="http://aker.pro/">Adrien Revel</a> (graphiste)</li>
+
+      <li>Production déléguée <a href="http://www.latelline.org">L’Atelline</a><br/>
+      contact : <a href="mailto:contact@latelline.org">contact@latelline.org</a> 04 99 54 69 07</br>
+      3 rue de la Cour du recteur , Montpellier</li>
     </ul>
       <h2>Partenaires opérationnels</h2>
       <ul>
@@ -18,7 +20,7 @@
         <li>Fonds de dotation pour le mécénat culturel Mécènes Montpellier Méditerranée</li>
         <li>Région Occitanie Pyrénées-Méditerranée</li>
         <li>Montpellier Méditerranée Métropole</li>
-        <li>Communes de la Métropole</li>
+        <li>Les communes d'accueil</li>
       </ul>
     </div>
   </div>

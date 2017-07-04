@@ -7,6 +7,7 @@ module.exports.paths = {
     "courtesy": "Créé par Patrice Barthès en collaboration avec Christophe Héral Avec la participation de Cab’cabaret et de Thomas Rondony, architecte. Remerciements particuliers à la Mairie de Villeneuve-lès-Maguelone, au Petit Troc, à Monique Avinens, Pierre Berthès, Sylviane Compan, Alain Guerrero pour leur contribution à la création de ce parcours.",
     "audiourl": ["/static/audio/tem_villeneuve.mp3"],
     "sound": "Christophe Héral",
+    "soundlink": "http://www.prod-erable.com/",
     "length": "1937",
     "cues": [{
         "pos": 120,
@@ -53,6 +54,7 @@ module.exports.paths = {
     "courtesy": "Créé par Patrice Barthès en collaboration avec Jerôme Hoffmann, compositeur.  Remerciements particuliers à la Mairie de Murviel lès Montpellier,  à Monsieur André Sudre et à Monsieur Jean Marc Touzard pour leur contribution à la création de ce parcours. La musique du générique est de Christophe Héral.",
     "audiourl": ["/static/audio/tem_murviel.mp3"],
     "sound": "Jérôme Hoffmann",
+    "soundlink": "https://jeromehoffmann.com/",
     "length": "2264",
     "cues": [{
       "pos": 108,
@@ -106,6 +108,7 @@ module.exports.paths = {
     "courtesy": "Créé par Patrice Barthès en collaboration avec le compositeur et musicien Jean Christophe Sirven. Christophe Héral a composé le générique. Remerciements particuliers à la Mairie de Sussargues pour sa complice collaboration.",
     "audiourl": ["/static/audio/tem_sussargues.mp3"],
     "sound": "Jean-Christophe Sirven",
+    "soundlink": "",
     "length": "2226",
     "cues": [{
       "pos": 141,
@@ -147,6 +150,7 @@ module.exports.paths = {
     "courtesy": "Créé par Patrice Barthès en collaboration avec le compositeur et musicien Frank Rabeyrolles. Christophe Héral a composé les génériques. Avec les participations de Miguel Georgieff et Numa Hambursin. Remerciements à Jean Luc Martineau et Etienne Hamel pour leurs contributions.",
     "audiourl": ["/static/audio/tem_clapiers.mp3"],
     "sound": "Frank Rabeyrolles",
+    "soundlink": "http://wool-recordings.com/",
     "length": 3106,
     "cues": [{
         "pos": 152,
@@ -206,6 +210,7 @@ module.exports.paths = {
     "courtesy": "Créé par Patrice Barthès en collaboration avec le compositeur et musicien Julien Valette. Christophe Héral a composé les génériques.",
     "audiourl": ["/static/audio/tem_saintgeorges.mp3"],
     "sound": "Julien Valette",
+    "soundlink": "http://www.labulo.com/",
     "length": 3966,
     "cues": [{
         "pos": 175,
@@ -281,6 +286,7 @@ module.exports.paths = {
     "courtesy": "Créé par Patrice Barthès en collaboration avec Félix Blume, ingénieur et artiste sonore et de Julien Valette au montage. Avec les contributions de Thibaut Suisse des Écologistes de l'Euzières, de Thierry Clément Rodriguez, président du Club de Tambourin de Lavérune, de Christophe Garnier du Comité Sport Tambourin Hérault et des services technique de la mairie de Lavérune.",
     "audiourl": ["/static/audio/tem_laverune.mp3"],
     "sound": "Felix Blume",
+    "soundlink": "http://www.felixblume.com/",
     "length": 3192,
     "cues": [{
         "pos": 170,
@@ -337,6 +343,86 @@ module.exports.paths = {
       {
         "pos": 3100,
         "title": "Retour"
+      }
+    ]
+  },
+  "restinclieres": {
+    "isActive": true,
+    "town": "Restinclières",
+    "location": [4.0391928, 43.724903],
+    "presentation": "",
+    "courtesy": "",
+    "sound": "François Ceccaldi",
+    "soundlink": "https://ceccal.bandcamp.com/",
+    "audiourl": "/static/audio/tem_restinclieres.mp3",
+    "length": 2899,
+    "cues": [{
+        "pos": 69,
+        "title": "consignes"
+      },
+      {
+        "pos": 160,
+        "title": "passerelle"
+      },
+      {
+        "pos": 337,
+        "title": "la croix"
+      },
+      {
+        "pos": 588,
+        "title": "le T"
+      },
+      {
+        "pos": 712,
+        "title": "point haut"
+      },
+      {
+        "pos": 920,
+        "title": "solitude"
+      },
+      {
+        "pos": 1027,
+        "title": "fermeture"
+      },
+      {
+        "pos": 1085,
+        "title": "saladelles"
+      },
+      {
+        "pos": 1380,
+        "title": "miroir"
+      },
+      {
+        "pos": 1655,
+        "title": "barrière"
+      },
+      {
+        "pos": 1783,
+        "title": "le centre"
+      },
+      {
+        "pos": 1858,
+        "title": "ludique"
+      },
+      {
+        "pos": 1885,
+        "title": "pause"
+      },
+      {
+        "pos": 2055,
+        "title": "route"
+      },
+      {
+        "pos": 2176,
+        "title": "coulée verte"
+      },
+      {
+        "pos": 2336,
+        "title": "tunnel"
+      },
+      {
+        "pos": 2619,
+        "title": "marechal"
       }
     ]
   }
