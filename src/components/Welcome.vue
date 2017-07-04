@@ -30,10 +30,8 @@
       l’origine dans la métropole montpelliéraine tout en intervenant à l’échelle régionale et nationale dans le cadre de nombreux partenariats. Elle produit et accompagne la mise en oeuvre de Territoire en Mouvements.
     </p>
   </div>
-
-
   <mapbox access-token="pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg" :map-options="{
-  style: "mapbox://styles/davidonet/cj3sji7kk001g2smog1w1oohw",
+  style: 'mapbox://styles/davidonet/cj3sji7kk001g2smog1w1oohw',
   center: [3.8999597,43.6056334],
   zoom: 10,
   interactive:false

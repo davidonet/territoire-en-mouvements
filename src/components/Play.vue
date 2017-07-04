@@ -38,11 +38,15 @@ h1 {
 </style>
 <script>
 import Mapbox from "mapbox-gl-vue"
+import {
+  Howl
+} from "howler"
 
 export default {
   name: "play",
   components: {
     Mapbox,
+    Howl
   },
   data() {
     return {
@@ -51,7 +55,13 @@ export default {
     }
   },
   methods: {
-    play() {}
+    play() {
+      var sound = new Howl({
+        src: this.audioSources,
+        html5: true
+      });
+      sound.play();
+    }
   }
 }
 </script>
