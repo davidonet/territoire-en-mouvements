@@ -15,7 +15,7 @@
           <router-link class="nav-link" to="/partner" v-b-toggle.nav_collapse_1>Les partenaires</router-link>
         </li>
       </ul>
-      <span class="navbar-text">Prochain inauguration : <b>Lavérune le 17 juin 2017 à 10:00</b></span>
+      <span class="navbar-text">Prochain inauguration : <b>Restinclières le 7 juillet 2017 à 10:00</b></span>
     </b-collapse>
 
   </b-navbar>

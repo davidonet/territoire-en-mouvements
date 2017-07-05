@@ -20,15 +20,16 @@
   </div>
   <img :src="'/static/img/w0.jpg'"></img>
   <div class="tem-text">
-    <h2>Patrice Barthès : artiste montpelliérain </h2>
+    <h2><a href="http://patricebarthesartiste.com/">Patrice Barthès</a> : artiste montpelliérain </h2>
     <p>Chorégraphe et plasticien, Patrice Barthès créé des oeuvres sensibles qui déplacent le regard du spectateur hors de ses repères en usant de dispositifs qui ré-interrogent notre rapport à l"environnement, son actualité et ses représentations. </p>
   </div>
   <img :src="'/static/img/w3.jpg'"></img>
   <div class="tem-text">
-    <h2>L’Atelline : lieu d’activation art et espace public / Atelier de Fabrique Artistique</h2>
+    <h2><a href="http://www.latelline.org/">L’Atelline</a> : lieu d’activation art et espace public / Atelier de Fabrique Artistique</h2>
     <p>L’Atelline accompagne depuis plus de 10 ans dans leurs démarches et leurs projets de création des artistes qui choisissent l’espace public comme terrain de questionnement, d’expérimentation, de représentation, de rencontre. Elle est implantée depuis
       l’origine dans la métropole montpelliéraine tout en intervenant à l’échelle régionale et nationale dans le cadre de nombreux partenariats. Elle produit et accompagne la mise en oeuvre de Territoire en Mouvements.
     </p>
+    <p class="text-center">Contact :<br/> <a href="mailto:contact@latelline.org">contact@latelline.org</a> <a href="tel:+33499546907">04 99 54 69 07</a> 3 rue de la Cour du recteur, Montpellier</p>
   </div>
   <mapbox @map-click="mapClicked" access-token="pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg" :map-options="{
   style: 'mapbox://styles/davidonet/cj3sji7kk001g2smog1w1oohw',
@@ -36,6 +37,12 @@
   zoom: 10,
   interactive:false
 }" :nav-control="{show:false}"></mapbox>
+<br/>
+  <div class="row">
+    <div class="col-6">
+
+    </div>
+  </div>
 </div>
 </template>
 <style scoped>
@@ -64,6 +71,7 @@ h2 {
   padding-left: 2em;
   padding-right: 2em;
 }
+
 </style>
 
 <script>

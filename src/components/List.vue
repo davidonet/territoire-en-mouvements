@@ -8,13 +8,14 @@
       </br/> Vivez un moment poétique, des instants sensibles dont vous êtes l’acteur et le spectateur en mouvement.
     </p>
   </div>
-  <b-table :items="town" :fields="fields" responsive>
-    <template slot="name" scope="item">
+  <div class="container-fluid">
+    <b-table :items="town" :fields="fields" responsive>
+      <template slot="name" scope="item">
         <router-link :to="item.item.link">{{item.item.name}}</icon>
-</router-link>
+        </router-link>
       </template>
-  </b-table>
-
+    </b-table>
+  </div>
 </div>
 </template>
 <style scoped>
@@ -46,9 +47,6 @@ export default {
         name: {
           label: "Ville",
           sortable: true
-        },
-        sound: {
-          label: "Création sonore"
         },
         duration: {
           label: "Durée"
