@@ -11,8 +11,11 @@
   <div class="container-fluid">
     <b-table :items="town" :fields="fields" responsive>
       <template slot="name" scope="item">
-        <router-link :to="item.item.link">{{item.item.name}}</icon>
+        <router-link :to="item.item.link">{{item.item.name}}
         </router-link>
+      </template>
+      <template slot="sound" scope="item">
+        <a target="_blank" :href="item.item.soundlink">{{item.item.sound}}</a>
       </template>
     </b-table>
   </div>
@@ -48,6 +51,9 @@ export default {
           label: "Ville",
           sortable: true
         },
+        sound: {
+          label: "Compositeur"
+        },
         duration: {
           label: "Durée"
         }
@@ -58,7 +64,8 @@ export default {
         name: this.$root.paths[t].town,
         link: "/play/" + t,
         duration: Math.ceil(this.$root.paths[t].length / 60) + "min ",
-        sound: this.$root.paths[t].sound
+        sound: this.$root.paths[t].sound,
+        soundlink: this.$root.paths[t].soundlink
       })
     }
     return ret

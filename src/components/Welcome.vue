@@ -2,7 +2,7 @@
 <div class="welcome">
   <img :src="'/static/img/w1.jpg'"></img>
   <div class="tem-text">
-    <h2>Territoire en Mouvements : un projet transversal </h2>
+    <h2>Territoire en Mouvements</h2>
     <p>Une collection de balades urbaines constituée entre 2016 et 2019 offrira à chaque commune de la Métropole de Montpellier, une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement. Les
       parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone. <b>Chaussez votre casque et laissez-vous guider !</b>
     </p>
@@ -20,16 +20,23 @@
   </div>
   <img :src="'/static/img/w0.jpg'"></img>
   <div class="tem-text">
-    <h2><a href="http://patricebarthesartiste.com/">Patrice Barthès</a> : artiste montpelliérain </h2>
+    <h2><a target="_blank" href="http://patricebarthesartiste.com/">Patrice Barthès</a> : artiste montpelliérain </h2>
     <p>Chorégraphe et plasticien, Patrice Barthès créé des oeuvres sensibles qui déplacent le regard du spectateur hors de ses repères en usant de dispositifs qui ré-interrogent notre rapport à l"environnement, son actualité et ses représentations. </p>
   </div>
   <img :src="'/static/img/w3.jpg'"></img>
   <div class="tem-text">
-    <h2><a href="http://www.latelline.org/">L’Atelline</a> : lieu d’activation art et espace public / Atelier de Fabrique Artistique</h2>
+    <h2><a target="_blank" href="http://www.latelline.org/">L’Atelline</a> : lieu d’activation art et espace public / Atelier de Fabrique Artistique</h2>
     <p>L’Atelline accompagne depuis plus de 10 ans dans leurs démarches et leurs projets de création des artistes qui choisissent l’espace public comme terrain de questionnement, d’expérimentation, de représentation, de rencontre. Elle est implantée depuis
       l’origine dans la métropole montpelliéraine tout en intervenant à l’échelle régionale et nationale dans le cadre de nombreux partenariats. Elle produit et accompagne la mise en oeuvre de Territoire en Mouvements.
     </p>
-    <p class="text-center">Contact :<br/> <a href="mailto:contact@latelline.org">contact@latelline.org</a> <a href="tel:+33499546907">04 99 54 69 07</a> 3 rue de la Cour du recteur, Montpellier</p>
+    <div class="row">
+      <div class="col-6">
+        <a target="_blank" href="http://www.latelline.org/">www.latelline.org</a><br/><a href="mailto:contact@latelline.org">contact@latelline.org</a>
+      </div>
+      <div class="col-6">
+        04 99 54 69 07<br/> 3 rue de la Cour du recteur, Montpellier
+      </div>
+    </div>
   </div>
   <mapbox @map-click="mapClicked" access-token="pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg" :map-options="{
   style: 'mapbox://styles/davidonet/cj3sji7kk001g2smog1w1oohw',
@@ -37,7 +44,7 @@
   zoom: 10,
   interactive:false
 }" :nav-control="{show:false}"></mapbox>
-<br/>
+  <br/>
   <div class="row">
     <div class="col-6">
 
@@ -49,6 +56,7 @@
 #map {
   width: 100%;
   height: 600px;
+  cursor:pointer;
 }
 
 img {
@@ -71,7 +79,6 @@ h2 {
   padding-left: 2em;
   padding-right: 2em;
 }
-
 </style>
 
 <script>

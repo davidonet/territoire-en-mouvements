@@ -6,15 +6,43 @@
   zoom: 17
 }"></mapbox>
   <div class="tem-text">
-    <h2>{{ info.town }}</h2>
-    <p>{{ info.presentation }}</p>
-    <p><small>{{ info.courtesy }}</small></p>
-    <b-button v-on:click="play">Écouter</b-button>
-    <b-button v-on:click="$root.sound.stop()">Arrêter</b-button>
-    <router-link to="/list" class="float-right">Revenir à la liste</router-link>
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ info.town }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>Point de départ : <em>{{ info.start}}</em></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <small>Latitude : {{info.location[0]}}  Longitude {{info.location[1]}}<br/>Durée : {{Math.ceil(info.length / 60)}} min</small>
+      </div>
+    </div>
+    <hr/>
+    <div class="row">
+      <div class="col-12">
+        <p v-html="info.presentation"></p>
+        <p class="float-right">Patrice Barthès</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        Compositeur<br/> <a target="_blank" :href="info.soundlink">{{info.sound}}</a>
+      </div>
+      <div class="col-8 text-right">
+        <small v-html="info.courtesy"></small>
+      </div>
+    </div>
     <br/>
-    <div v-for="chapter in info.cues" :key="chapter.pos">
-      <b-button variant="link" v-on:click="$root.sound.seek(chapter.pos)">{{chapter.title}}</b-button>
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center">
+          <b-button variant="success">Commencer le parcours</b-button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -43,32 +71,14 @@ h1 {
 </style>
 <script>
 import Mapbox from "mapbox-gl-vue"
-import {
-  Howl
-} from "howler"
-
 export default {
   name: "play",
   components: {
-    Mapbox,
-    Howl
+    Mapbox
   },
   data() {
     return {
-      info: this.$root.paths[this.$route.params.town],
-      audioSources: this.$root.paths[this.$route.params.town].audiourl
-    }
-  },
-  methods: {
-    play() {
-      if (this.$root.sound) {
-        this.$root.sound.stop();
-      }
-      this.$root.sound = new Howl({
-        src: this.audioSources,
-        html5: true
-      });
-      this.$root.sound.play();
+      info: this.$root.paths[this.$route.params.town]
     }
   }
 }

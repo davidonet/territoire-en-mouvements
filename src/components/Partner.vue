@@ -4,13 +4,9 @@
       <h1>Les partenaires de l'aventure</h1>
       <h2>Partenaires de création</h2>
       <ul>
-      <li>Pour la conception digitale : <a href="http://david-o.net">David Olivari</a> (Ingénierie numérique) et <a href="http://aker.pro/">Adrien Revel</a> (graphiste)</li>
-<li>Pour la création sonore :
-<ul>
-      <li v-for="town in this.$root.paths"> {{town.town}} :  <a :href="town.soundlink">{{town.sound}}</a></li>
-</ul>
+      <li>Pour la conception digitale : <a target="_blank" href="http://david-o.net">David Olivari</a> (Ingénierie numérique) et <a target="_blank" href="http://aker.pro/">Adrien Revel</a> (graphiste)</li>
 </li>
-      <li>Production déléguée <a href="http://www.latelline.org">L’Atelline</a><br/>
+      <li>Production déléguée <a target="_blank" href="http://www.latelline.org">L’Atelline</a><br/>
       contact : <a href="mailto:contact@latelline.org">contact@latelline.org</a> <a href="tel:+33499546907">04 99 54 69 07</a></br>
       3 rue de la Cour du recteur , Montpellier</li>
     </ul>
@@ -25,7 +21,6 @@
         <li>Région Occitanie Pyrénées-Méditerranée</li>
         <li>Montpellier Méditerranée Métropole</li>
         <li>Les communes d'accueil</li>
-        <li>Fonds de dotation Mécènes Montpellier Méditerranée en 2016</li>
       </ul>
     </div>
   </div>

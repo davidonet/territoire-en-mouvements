@@ -1,5 +1,5 @@
 const fs = require("fs");
-const global = require("../src/assets/paths");
+const global = require("./path");
 
 let geojson = {
   "type": "FeatureCollection",
@@ -26,4 +26,4 @@ for (let t in global.paths) {
   geojson.features.push(point);
 }
 
-fs.writeFile('tem.json', JSON.stringify(geojson), 'utf8', console.log);
+fs.writeFile('tem.geojson', JSON.stringify(geojson), 'utf8', console.log);
