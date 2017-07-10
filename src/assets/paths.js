@@ -105,7 +105,7 @@ module.exports.paths = {
   "sussargues": {
     "isActive": true,
     "town": "Sussargues",
-    "location": [4.0019819, 43.7128832],
+    "location": [4.0052741, 43.712065],
     "start": "Sur la place ronde entre le Chai d'Emilien et la pharmacie, Grand Rue Louis Bouis (D54) ",
     "presentation": "Le parcours dédié à Sussargues valorise les matières, les formes pour faire apparaître peu à peu la balade comme la visite d’une galerie d’art. Depuis la place du 14 juillet jusqu’à l’Église Saint Martin on est guidé dans une exploration atypique de la ville de part et d’autre de la Grand Rue. Le propos est nourri de temps suspendus propices à la contemplation entrecoupés par des moments où le corps s’engage franchement dans le rapport à l’espace et aux surfaces. Le parcours se termine par une interrogation intime… ",
     "courtesy": "Remerciements particuliers à la Mairie de Sussargues pour sa complice collaboration.",
@@ -286,7 +286,7 @@ module.exports.paths = {
   "laverune": {
     "isActive": true,
     "town": "Lavérune",
-    "location": [3.813131, 43.571227],
+    "location": [3.812666, 43.571184],
     "start": "Sur le panneau de sortie de Saint Jean de Védas, près du pont surplombant la Mosson, Chemin du Pont de la Fuste. ",
     "presentation": "Le parcours dédié à Lavérune valorise l’extraordinaire du quotidien. Les événements ont toujours des conséquences irréversibles, le désespoir doit faire place au ré-enchantement, au merveilleux du banal. Ainsi va la nature. Nous prendrons la mesure de l’espace, du temps et de la matérialité au bord du fleuve, tout « pré ». Pour le plaisir de redécouvrir un instant suspendu du monde et la possibilité d’une poésie de l’histoire.",
     "courtesy": "Montage audio : Julien Valette<br/>Contributions des habitants : Thibaut Suisse, botaniste aux Ecologistes de l’Euzières ; Thierry Clément Rodriguez, Président du Club Tambourin de Lavérune ; Christophe Garnier du Comité Sport Tambourin Hérault.",
@@ -355,7 +355,7 @@ module.exports.paths = {
   "restinclieres": {
     "isActive": true,
     "town": "Restinclières",
-    "location": [4.0391928, 43.724903],
+    "location": [4.039779, 43.724865],
     "start": "Sur la rambarde permanente au début du Chemin du Château, le long de la D610.",
     "presentation": "Le parcours dédié à Restinclières propose une visite des différentes composantes de la commune, le centre historique, les habitations périphériques et les espaces paysagers qui les relient ou les séparent. J’ai choisi de très peu commenter les caractéristiques laissant au visiteur le soin d’augurer des différentes ambiances. Je propose pour la première fois, dans ce parcours, un chapitre de consignes que vous serez libre d’écouter à tout moment pour engager une relation sensible qui valorise votre rapport au lieu et à l’instant présent. Vous êtes libre d’interpréter ces consignes comme bon vous semble et quand cela vous inspire.",
     "courtesy": "",

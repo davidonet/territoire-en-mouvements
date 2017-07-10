@@ -2,10 +2,10 @@
 <div class="list">
   <div class="tem-text">
     <h1>Informations pratiques</h1>
-    <p>
-      Rendez-vous au point de départ des balades, équipé d’un téléphone portable chargé et connecté à internet et d’un casque audio.<br/> Téléchargez l’enregistrement audio à partir de votre téléphone portable et suivez les indications qui vous mèneront
-      sur les chemins de traverse à la rencontre des paysages, des acteurs et des monuments historiques du territoire.
-      </br/> Vivez un moment poétique, des instants sensibles dont vous êtes l’acteur et le spectateur en mouvement.
+    <p>Rendez-vous au point de départ des balades, équipé d’<b>un téléphone portable chargé et connecté à internet et d’un casque audio.</b><br/>
+      Cliquez sur « commencer le parcours »pour lancer la piste audio.<br/>
+      Suivez les indications qui vous guident à travers les paysages, à la rencontre du patrimoine, vers de nouvelles perceptions.<br/>
+      L'artiste <b>Patrice Barthès</b> vous invite à vivre un moment poétique, des instants sensibles dont vous êtes l’acteur et le spectateur en mouvement.
     </p>
   </div>
   <div class="container-fluid">

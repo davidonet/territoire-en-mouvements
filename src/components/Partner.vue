@@ -16,11 +16,11 @@
       </ul>
       <h2>Partenaires institutionnels et financiers</h2>
       <ul>
-        <li>DRAC Occitanie Pyrénées-Méditerranée</li>
-        <li>Fonds de dotation pour le mécénat culturel Mécènes Montpellier Méditerranée</li>
+        <li>DRAC Occitanie</li>
         <li>Région Occitanie Pyrénées-Méditerranée</li>
         <li>Montpellier Méditerranée Métropole</li>
-        <li>Les communes d'accueil</li>
+        <li>Les communes d’accueil</li>
+        <li>Fonds de dotation Mécènes Montpellier Méditerranée en 2016</li>
       </ul>
     </div>
   </div>
