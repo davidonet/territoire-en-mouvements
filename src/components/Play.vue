@@ -40,11 +40,12 @@
     <div class="row">
       <div class="col-12">
         <div class="text-center">
-          <b-button variant="success">Commencer le parcours</b-button>
+          <b-button v-b-modal.confirm variant="success">Commencer le parcours</b-button>
         </div>
       </div>
     </div>
   </div>
+  <b-modal id="confirm"> </b-modal>
 </div>
 </template>
 <style scoped>

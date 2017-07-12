@@ -4,12 +4,13 @@ import json
 with open('audiocut.json', 'r') as f:
   tem = json.load(f)
 
-clip = AudioFileClip("./murviel.wav")
+clip = AudioFileClip("./murviel.aiff")
 metadata = ["-metadata", "track=1",
             "-metadata", "title=Intro",
             "-metadata", "author=Patrice Barthès",
             "-metadata", "album=TEM " + tem["town"],
-            "-metadata", "year=2017"]
+            "-metadata", "year=2017",
+            "-af","volume=6dB"]
 
 subclip = clip.subclip(0, tem["cues"][0]["pos"])
 filename = '{:02d}-{}-{}-TEM.mp3'.format(1, "Intro", tem["town"])
