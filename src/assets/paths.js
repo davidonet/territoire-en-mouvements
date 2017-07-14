@@ -289,7 +289,7 @@ module.exports.paths = {
     "location": [3.812666, 43.571184],
     "start": "Sur le panneau de sortie de Saint Jean de Védas, près du pont surplombant la Mosson, Chemin du Pont de la Fuste. ",
     "presentation": "Le parcours dédié à Lavérune valorise l’extraordinaire du quotidien. Les événements ont toujours des conséquences irréversibles, le désespoir doit faire place au ré-enchantement, au merveilleux du banal. Ainsi va la nature. Nous prendrons la mesure de l’espace, du temps et de la matérialité au bord du fleuve, tout « pré ». Pour le plaisir de redécouvrir un instant suspendu du monde et la possibilité d’une poésie de l’histoire.",
-    "courtesy": "Montage audio : Julien Valette<br/>Contributions des habitants : Thibaut Suisse, botaniste aux Ecologistes de l’Euzières ; Thierry Clément Rodriguez, Président du Club Tambourin de Lavérune ; Christophe Garnier du Comité Sport Tambourin Hérault.",
+    "courtesy": "Montage audio : Julien Valette<br/>Contributions des habitants : Thibaut Suisse, botaniste aux Ecologistes de l’Euzières<br/>Thierry Clément Rodriguez, Président du Club Tambourin de Lavérune<br/>Christophe Garnier du Comité Sport Tambourin Hérault.",
     "audiourl": ["/static/audio/tem_laverune.mp3"],
     "sound": "Felix Blume",
     "soundlink": "http://www.felixblume.com/",

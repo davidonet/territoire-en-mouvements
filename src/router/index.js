@@ -4,6 +4,7 @@ import Welcome from "@/components/Welcome"
 import List from "@/components/List"
 import Play from "@/components/Play"
 import Partner from "@/components/Partner"
+import Player from "@/components/Player"
 
 Vue.use(Router)
 
@@ -32,5 +33,8 @@ export default new Router({
   }, {
     path: "/play/:town?",
     component: Play
+  }, {
+    path: "/player/:town?",
+    component: Player
   }]
 })

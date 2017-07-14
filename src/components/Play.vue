@@ -17,10 +17,20 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <small>Latitude : {{info.location[0]}}  Longitude {{info.location[1]}}<br/>Durée : {{Math.ceil(info.length / 60)}} min</small>
+      <div class="col-8">
+        <small>Latitude : {{info.location[1]}} <br/>Longitude {{info.location[0]}}<br/><a :href="'https://maps.google.fr/maps?q='+info.location[1]+','+info.location[0]+'&z=20'" target="_blank">M'y rendre</a><sup> avec Google Maps</sup><br/>Durée : {{Math.ceil(info.length / 60)}} min</small>
+      </div>
+      <div class="col-4">
+        <b-button v-b-toggle.startpoint class="float-right" variant="outline-secondary" size="sm">Point de départ</b-button>
       </div>
     </div>
+    <b-collapse id="startpoint">
+      <div class="row">
+        <div class="col-12">
+          <img class="img-fluid" :src="'/static/img/start/'+$route.params.town+'.jpg'"></img>
+        </div>
+      </div>
+    </b-collapse>
     <hr/>
     <div class="row">
       <div class="col-12">
@@ -45,7 +55,10 @@
       </div>
     </div>
   </div>
-  <b-modal id="confirm"> </b-modal>
+  <b-modal title="Attention" close-title="Non" ok-title="Oui" id="confirm" @ok="$router.push('/player/' + $route.params.town)">
+    <p>Assurez vous de bien vous trouver au départ du parcours, l'écoute de cet enregistrement ne doit pas être écouter hors contexte afin d'en préserver la surprise et la découverte.<img class="img-fluid" :src="'/static/img/start/'+$route.params.town+'.jpg'"></img>Êtes
+      vous devant la signalétique ?</p>
+  </b-modal>
 </div>
 </template>
 <style scoped>
