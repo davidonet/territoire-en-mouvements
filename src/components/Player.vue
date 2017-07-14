@@ -17,13 +17,13 @@
     </div>
     <div class="row" v-for="(c,key,index) in cues">
       <div class="col-5 text-right chapmiddle">
-        <span :id="'c'+key" :class="{'text-success':c.isActive}" v-if="(index%2)===1" v-on:click="$root.sound.seek(key)">{{c.title}}</span>
+        <span :id="'c'+key" :class="{'text-success':c.isActive}" v-if="(index%2)===1" v-on:click="sound.seek(key)">{{c.title}}</span>
       </div>
       <div class="col-2 text-center">
-        <img v-on:click="$root.sound.seek(key)" src="/static/icon/tem_path-chapter.svg"></img>
+        <img v-on:click="sound.seek(key)" src="/static/icon/tem_path-chapter.svg"></img>
       </div>
       <div class="col-5 chapmiddle">
-        <span :id="'c'+key" :class="{'text-success':c.isActive}" v-if="(index%2)===0" v-on:click="$root.sound.seek(key)">{{c.title}}</span>
+        <span :id="'c'+key" :class="{'text-success':c.isActive}" v-if="(index%2)===0" v-on:click="sound.seek(key)">{{c.title}}</span>
       </div>
     </div>
     <div class="row">
@@ -57,13 +57,17 @@
   </div>
 </div>
 </template>
-<style>
+<style scoped>
 img {
   height: 64px;
 }
 
 h2 {
   margin-top: 24px;
+}
+
+h3 {
+  font-family: fixed;
 }
 
 .chapmiddle {
@@ -94,8 +98,9 @@ export default {
     VueScrollTo
   },
   beforeRouteLeave(to, from, next) {
-    if (this.$root.sound) {
+    if (this.sound) {
       this.stop();
+      clearInterval(this.poll);
     }
     next();
   },
@@ -114,30 +119,36 @@ export default {
       audioSources: this.$root.paths[this.$route.params.town].audiourl,
       cues,
       seek: 0,
-      current: 0
+      current: 0,
+      sound: new Howl({
+        src: this.$root.paths[this.$route.params.town].audiourl,
+        html5: true
+      })
     }
   },
   created() {
     scrollTo(document.body, 0, 0);
+    if (this.poll) {
+      clearInterval(this.poll);
+    }
+    this.poll = setInterval(this.polling, 950);
   },
   methods: {
     stop() {
-      this.$root.sound.stop()
+      this.sound.stop()
       this.isPlaying = false;
-      if (this.poll) {
-        clearInterval(this.poll);
-        this.seek = 0;
-        if (this.cues[this.seek.toString()]) {
-          this.cues[this.current].isActive = false;
-        }
+      if (0 < this.current) {
+        this.cues[this.current].isActive = false;
       }
+      this.seek = 0;
+      this.current = 0;
     },
     pause() {
-      this.$root.sound.pause();
+      this.sound.pause();
       this.isPlaying = false;
     },
     polling() {
-      this.seek = Math.floor(this.$root.sound.seek());
+      this.seek = Math.floor(this.sound.seek());
       if (this.cues[this.seek.toString()]) {
         if (0 < this.current) {
           this.cues[this.current].isActive = false;
@@ -151,15 +162,7 @@ export default {
       }
     },
     play() {
-      if (this.$root.sound) {
-        this.$root.sound.stop();
-      }
-      this.$root.sound = new Howl({
-        src: this.audioSources,
-        html5: true
-      });
-      this.$root.sound.play();
-      this.poll = setInterval(this.polling, 950);
+      this.sound.play();
       this.isPlaying = true;
     }
   },
