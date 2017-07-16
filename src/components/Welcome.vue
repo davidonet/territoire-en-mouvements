@@ -38,16 +38,17 @@
       </div>
     </div>
   </div>
-  <mapbox @map-click="mapClicked" @map-touch="mapClicked" access-token="pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg" :map-options="{
+  <mapbox v-if="!isMobile" @map-click="mapClicked" @map-touch="mapClicked" access-token="pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg" :map-options="{
   style: 'mapbox://styles/davidonet/cj3sji7kk001g2smog1w1oohw',
   center: [3.8999597,43.6056334],
   zoom: 10,
   interactive:false
 }" :nav-control="{show:false}"></mapbox>
+
   <br/>
   <div class="row">
-    <div class="col-6">
-
+    <div class="col-12 text-center bottom">
+      <b-button v-if="isMobile" variant="outline-success" to="/list">Voir la liste des parcours</b-button>
     </div>
   </div>
 </div>
@@ -56,7 +57,7 @@
 #map {
   width: 100%;
   height: 600px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 img {
@@ -73,10 +74,12 @@ h2 {
   color: #00FF80;
 }
 
-.welcome{
+.welcome {
   overflow-x: hidden;
 }
-
+.bottom{
+  margin-bottom: 2em;
+}
 .tem-text {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -106,6 +109,11 @@ export default {
       }
       const feature = features[0];
       this.$router.push("/play/" + feature.properties.id)
+    }
+  },
+  computed: {
+    isMobile: function() {
+      return (document.documentElement.clientWidth < 720);
     }
   }
 }
