@@ -5,7 +5,12 @@ import App from "./App"
 import router from "./router"
 import global from "./assets/paths"
 import BootstrapVue from "bootstrap-vue";
+import Icon from "vue-awesome/components/Icon";
+import "vue-awesome/icons/facebook";
+import "vue-awesome/icons/twitter";
+import "vue-awesome/icons/whatsapp";
 
+Vue.component("icon", Icon);
 Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false

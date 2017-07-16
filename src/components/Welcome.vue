@@ -1,5 +1,12 @@
 <template>
 <div class="welcome">
+
+  <div v-if="isMobile" class="row bottom">
+    <div class="col-12 text-center">
+      <span class="text-warning">Vous êtes sur un mobile,<br/>aller directement à la </span><br/><br/>
+      <b-button variant="outline-success" to="/list">Liste des parcours</b-button>
+    </div>
+  </div>
   <img :src="'/static/img/head.jpg'"></img>
   <div class="tem-text">
     <h2>Territoire en Mouvements</h2>
@@ -44,13 +51,6 @@
   zoom: 10,
   interactive:false
 }" :nav-control="{show:false}"></mapbox>
-
-  <br/>
-  <div class="row">
-    <div class="col-12 text-center bottom">
-      <b-button v-if="isMobile" variant="outline-success" to="/list">Voir la liste des parcours</b-button>
-    </div>
-  </div>
 </div>
 </template>
 <style scoped>
@@ -77,9 +77,12 @@ h2 {
 .welcome {
   overflow-x: hidden;
 }
-.bottom{
+
+.bottom {
   margin-bottom: 2em;
+  margin-top: 2em;
 }
+
 .tem-text {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -90,6 +93,7 @@ h2 {
 
 <script>
 import Mapbox from "mapbox-gl-vue"
+
 export default {
   name: "welcome",
   components: {
