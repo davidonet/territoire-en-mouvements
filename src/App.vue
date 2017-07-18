@@ -9,22 +9,14 @@
     <b-collapse is-nav id="nav_collapse_1">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <social-sharing url="http://territoire-en-mouvements.fr"
-            title="Territoire en mouvements"
-            description="Une collection de balades urbaines constituée entre 2016 et 2019 offrira à chaque commune de la Métropole de Montpellier, une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement. Les parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone."
-            quote="Chaussez votre casque et laissez-vous guider !"
-            twitter-user="l_atelline"
-            hashtags="montpellier3m,TerritoireEnMouvements"
-          inline-template>
-            <div>
-              <network network="facebook">
-                <icon scale="2" color="grey" name="facebook"></icon>
-              </network>
-              <network scale="2" network="twitter">
-                <icon scale="2" color="grey" name="twitter"></icon>
-              </network>
-            </div>
-          </social-sharing>
+          <a target="_blank" href="https://www.facebook.com/TerritoireEnMouvements/">
+            <icon scale="2" color="grey" name="facebook"></icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" href="https://twitter.com/l_atelline">
+            <icon scale="2" color="grey" name="twitter"></icon>
+          </a>
         </li>
         <li class="nav-item">
           <router-link class="nav-link" to="/list" v-b-toggle.nav_collapse_1>Les parcours</router-link>
@@ -33,7 +25,7 @@
           <router-link class="nav-link" to="/partner" v-b-toggle.nav_collapse_1>Les partenaires</router-link>
         </li>
       </ul>
-      <span class="navbar-text">Prochain inauguration : <b>En septembre</b></span>
+      <span class="nav-link">Prochaine inauguration : <b>le 17 septembre à Fabrègues</b></span>
     </b-collapse>
 
   </b-navbar>
@@ -66,10 +58,13 @@ body {
 a {
   color: #00FF80;
 }
-
 a:hover {
   color: #00FF80;
   text-decoration: none;
   font-weight: bold;
+}
+
+svg:hover {
+  color: #ddd;
 }
 </style>

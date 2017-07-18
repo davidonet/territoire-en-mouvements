@@ -3,32 +3,30 @@
 
   <div v-if="isMobile" class="row bottom">
     <div class="col-12 text-center">
-      <span class="text-warning">Vous êtes sur un mobile,<br/>aller directement à la </span><br/><br/>
-      <b-button variant="outline-success" to="/list">Liste des parcours</b-button>
+      <span class="text-warning">Vous êtes sur un mobile, accès direct à la </span><br/><br/>
+      <b-button variant="outline-success" to="/list">liste des parcours</b-button>
     </div>
   </div>
   <img :src="'/static/img/head.jpg'"></img>
   <div class="tem-text">
     <h2>Territoire en Mouvements</h2>
-    <p>Une collection de balades urbaines constituée entre 2016 et 2019 offrira à chaque commune de la Métropole de Montpellier, une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement. Les
-      parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone. <b>Chaussez votre casque et laissez-vous guider !</b>
+    <p>Une collection de balades urbaines constituée entre 2016 et 2019 offre à chaque commune de la Métropole de Montpellier, une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement.<br/> Les
+      parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone.<br/> <b>Chaussez votre casque et laissez-vous guider !</b>
     </p>
   </div>
   <img :src="'/static/img/img0.jpg'"></img>
   <div class="tem-text">
-    <p>L’occasion de (re)découvrir le territoire à travers le regard singulier de l’artiste Patrice Barthès. Les parcours sont nourris par des recherches, des rencontres et des contributions d’habitants, d’architectes, d’urbanistes, d’historiens, de paysagistes,
-      … Un compositeur, à chaque fois différent, est invité à créer un univers sonore et musical.</p>
+    <p>L’occasion de (re)découvrir le territoire à travers le regard singulier de l’artiste Patrice Barthès. Les parcours sont nourris de recherches, de rencontres et contributions d’habitants, d’architectes, d’urbanistes, d’historiens, de paysagistes…<br/>Un compositeur, différent pour chaque balade, est invité à créer un univers sonore et musical.</p>
   </div>
-  <img :src="'/static/img/img1.jpg'"></img>
+  <img :src="'/static/img/img2.jpg'"></img>
   <div class="tem-text">
     <p>En révélant les espaces, les réalités, les richesses et le patrimoine des 31 communes, la collection fait apparaître un maillage géo-poétique de ce territoire administratif récemment constitué. Une invitation à une nouvelle perception des espaces
       traversés.
     </p>
   </div>
-  <img :src="'/static/img/img2.jpg'"></img>
+  <img :src="'/static/img/img4.jpg'"></img>
   <div class="tem-text">
-    <h2><a target="_blank" href="http://patricebarthesartiste.com/">Patrice Barthès</a> : artiste montpelliérain </h2>
-    <p>Chorégraphe et plasticien, Patrice Barthès créé des oeuvres sensibles qui déplacent le regard du spectateur hors de ses repères en usant de dispositifs qui ré-interrogent notre rapport à l"environnement, son actualité et ses représentations. </p>
+    <h2><a target="_blank" href="http://patricebarthesartiste.com/">Patrice Barthès</a> est chorégraphe et plasticien.</h2> Il créé des œuvres sensibles qui déplacent le regard du spectateur hors de ses repères, en usant de dispositifs qui ré-interrogent notre rapport à l’environnement, son actualité et ses représentations.</p>
   </div>
   <img :src="'/static/img/img3.jpg'"></img>
   <div class="tem-text">
@@ -37,10 +35,13 @@
       l’origine dans la métropole montpelliéraine tout en intervenant à l’échelle régionale et nationale dans le cadre de nombreux partenariats. Elle produit et accompagne la mise en oeuvre de Territoire en Mouvements.
     </p>
     <div class="row">
-      <div class="col-6">
+      <div class="col-md-4">
         <a target="_blank" href="http://www.latelline.org/">www.latelline.org</a><br/><a href="mailto:contact@latelline.org">contact@latelline.org</a>
       </div>
-      <div class="col-6">
+      <div class="col-md-4">
+        <img src="/static/logo/atelline.png"></img>
+      </div>
+      <div class="col-md-4">
         04 99 54 69 07<br/> 3 rue de la Cour du recteur, Montpellier
       </div>
     </div>
