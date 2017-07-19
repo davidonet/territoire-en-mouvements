@@ -10,7 +10,7 @@
   <img :src="'/static/img/head.jpg'"></img>
   <div class="tem-text">
     <h2>Territoire en Mouvements</h2>
-    <p>Une collection de balades urbaines constituée entre 2016 et 2019 offre à chaque commune de la Métropole de Montpellier, une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement.<br/>      Les parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone.<br/> <b>Chaussez votre casque et laissez-vous guider !</b>
+    <p>Une collection de balades urbaines constituée entre 2016 et 2019 offre à chaque commune de la Métropole de Montpellier une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement.<br/>      Les parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone.<br/> <b>Chaussez votre casque et laissez-vous guider !</b>
     </p>
   </div>
   <img :src="'/static/img/img0.jpg'"></img>
