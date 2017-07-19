@@ -9,7 +9,8 @@ import Icon from "vue-awesome/components/Icon";
 import "vue-awesome/icons/facebook";
 import "vue-awesome/icons/twitter";
 import "vue-awesome/icons/whatsapp";
-
+import shortid from "shortid";
+import axios from "axios";
 Vue.component("icon", Icon);
 Vue.use(BootstrapVue);
 
@@ -30,7 +31,22 @@ new Vue({
   },
   data() {
     return {
+      localID: shortid.generate(),
       paths: global.paths
     }
+  },
+  created() {
+    axios.post("https://gelf.david-o.net/gelf", {
+      "short_message": "Welcome",
+      "level": "tem",
+      "host": this.$root.localID,
+      "page": "welcome",
+      "appCodeName": navigator.appCodeName,
+      "appVersion": navigator.appVersion,
+      "userAgent": navigator.userAgent,
+      "platform": navigator.platform,
+      "width": document.documentElement.clientWidth,
+      "height": document.documentElement.clientHeight
+    })
   }
 })

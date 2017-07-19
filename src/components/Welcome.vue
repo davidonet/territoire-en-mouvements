@@ -10,13 +10,13 @@
   <img :src="'/static/img/head.jpg'"></img>
   <div class="tem-text">
     <h2>Territoire en Mouvements</h2>
-    <p>Une collection de balades urbaines constituée entre 2016 et 2019 offre à chaque commune de la Métropole de Montpellier, une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement.<br/> Les
-      parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone.<br/> <b>Chaussez votre casque et laissez-vous guider !</b>
+    <p>Une collection de balades urbaines constituée entre 2016 et 2019 offre à chaque commune de la Métropole de Montpellier, une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement.<br/>      Les parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone.<br/> <b>Chaussez votre casque et laissez-vous guider !</b>
     </p>
   </div>
   <img :src="'/static/img/img0.jpg'"></img>
   <div class="tem-text">
-    <p>L’occasion de (re)découvrir le territoire à travers le regard singulier de l’artiste Patrice Barthès. Les parcours sont nourris de recherches, de rencontres et contributions d’habitants, d’architectes, d’urbanistes, d’historiens, de paysagistes…<br/>Un compositeur, différent pour chaque balade, est invité à créer un univers sonore et musical.</p>
+    <p>L’occasion de (re)découvrir le territoire à travers le regard singulier de l’artiste Patrice Barthès. Les parcours sont nourris de recherches, de rencontres et contributions d’habitants, d’architectes, d’urbanistes, d’historiens, de paysagistes…<br/>Un
+      compositeur, différent pour chaque balade, est invité à créer un univers sonore et musical.</p>
   </div>
   <img :src="'/static/img/img2.jpg'"></img>
   <div class="tem-text">
@@ -35,13 +35,13 @@
       l’origine dans la métropole montpelliéraine tout en intervenant à l’échelle régionale et nationale dans le cadre de nombreux partenariats. Elle produit et accompagne la mise en oeuvre de Territoire en Mouvements.
     </p>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 text-center">
+        <img style="width:60%" src="/static/logo/atelline.png"></img>
+      </div>
+      <div class="col-md-4 text-center">
         <a target="_blank" href="http://www.latelline.org/">www.latelline.org</a><br/><a href="mailto:contact@latelline.org">contact@latelline.org</a>
       </div>
-      <div class="col-md-4">
-        <img src="/static/logo/atelline.png"></img>
-      </div>
-      <div class="col-md-4">
+      <div class="col-md-4 text-center">
         04 99 54 69 07<br/> 3 rue de la Cour du recteur, Montpellier
       </div>
     </div>
