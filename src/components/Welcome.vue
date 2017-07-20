@@ -26,7 +26,7 @@
   </div>
   <img :src="'/static/img/img4.jpg'"></img>
   <div class="tem-text">
-    <h2><a target="_blank" href="http://patricebarthesartiste.com/">Patrice Barthès</a> est chorégraphe et plasticien.</h2> Il créé des œuvres sensibles qui déplacent le regard du spectateur hors de ses repères, en usant de dispositifs qui ré-interrogent notre rapport à l’environnement, son actualité et ses représentations.</p>
+    <h2><a target="_blank" href="http://patricebarthesartiste.com/">Patrice Barthès</a> : chorégraphe et plasticien.</h2> Patrice Barthès créé des œuvres sensibles qui déplacent le regard du spectateur hors de ses repères, en usant de dispositifs qui ré-interrogent notre rapport à l’environnement, son actualité et ses représentations.</p>
   </div>
   <img :src="'/static/img/img3.jpg'"></img>
   <div class="tem-text">

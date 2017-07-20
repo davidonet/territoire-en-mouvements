@@ -8,7 +8,7 @@
       <p>Production déléguée: <a target="_blank" style="color:white" href="http://www.latelline.org/">L'Atelline</a></p>
       <div class="row">
         <div class="col-md-4 text-center">
-    <img width="60%" src="/static/logo/atelline_c.png"></img>
+    <img width="60%" src="/static/logo/atelline.png"></img>
           </div>
         <div class="col-md-4 text-center">
           <a target="_blank" href="http://www.latelline.org">www.latelline.org</a><br/><a href="mailto:contact@latelline.org">contact@latelline.org</a>
