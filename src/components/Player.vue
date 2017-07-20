@@ -83,7 +83,7 @@ h3 {
 import "vue-awesome/icons/play";
 import "vue-awesome/icons/pause";
 import "vue-awesome/icons/stop";
-import axios from "axios";
+
 import Icon from "vue-awesome/components/Icon";
 import VueScrollTo from "vue-scrollto";
 
@@ -128,13 +128,7 @@ export default {
     }
   },
   created() {
-    axios.post("https://gelf.david-o.net/gelf", {
-      "short_message": "Player " + this.$route.params.town,
-      "host": this.$root.localID,
-      "town": this.$route.params.town,
-      "level": "tem",
-      "page": "player"
-    });
+    this.$ga.event(this.$route.params.town, "player", "created", 0)
     scrollTo(document.body, 0, 0);
     if (this.poll) {
       clearInterval(this.poll);
@@ -144,15 +138,7 @@ export default {
   methods: {
     stop() {
       this.sound.stop()
-      axios.post("https://gelf.david-o.net/gelf", {
-        "short_message": "Stop " + this.$route.params.town + " @" + this.seek,
-        "host": this.$root.localID,
-        "town": this.$route.params.town,
-        "level": "tem",
-        "page": "player",
-        "action": "stop",
-        "pos": this.seek
-      });
+      this.$ga.event(this.$route.params.town, "player", "stop", this.seek)
       this.isPlaying = false;
       if (0 < this.current) {
         this.cues[this.current].isActive = false;
@@ -163,15 +149,7 @@ export default {
     pause() {
       this.sound.pause();
       this.isPlaying = false;
-      axios.post("https://gelf.david-o.net/gelf", {
-        "short_message": "Pause " + this.$route.params.town + " @" + this.seek,
-        "host": this.$root.localID,
-        "town": this.$route.params.town,
-        "level": "tem",
-        "page": "player",
-        "action": "pause",
-        "pos": this.seek
-      });
+      this.$ga.event(this.$route.params.town, "player", "pause", this.seek)
     },
     polling() {
       this.seek = Math.floor(this.sound.seek());
@@ -187,25 +165,11 @@ export default {
         });
       }
       if (this.seek === (this.info.length - 60)) {
-        axios.post("https://gelf.david-o.net/gelf", {
-          "short_message": "Finish " + this.$route.params.town + " ",
-          "host": this.$root.localID,
-          "town": this.$route.params.town,
-          "level": "tem",
-          "page": "player",
-          "action": "finish"
-        });
+        this.$ga.event(this.$route.params.town, "player", "finished", this.seek)
       }
     },
     play() {
-      axios.post("https://gelf.david-o.net/gelf", {
-        "short_message": "Play " + this.$route.params.town + " @" + this.seek,
-        "host": this.$root.localID,
-        "town": this.$route.params.town,
-        "level": "tem",
-        "page": "player",
-        "action": "play"
-      });
+      this.$ga.event(this.$route.params.town, "player", "play", this.seek)
       this.sound.play();
       this.isPlaying = true;
     }

@@ -10,9 +10,14 @@ import "vue-awesome/icons/facebook";
 import "vue-awesome/icons/twitter";
 import "vue-awesome/icons/whatsapp";
 import shortid from "shortid";
-import axios from "axios";
+import VueAnalytics from "vue-analytics";
+
 Vue.component("icon", Icon);
 Vue.use(BootstrapVue);
+Vue.use(VueAnalytics, {
+  id: "UA-75194409-2",
+  router
+});
 
 Vue.config.productionTip = false
 
@@ -32,21 +37,7 @@ new Vue({
   data() {
     return {
       localID: shortid.generate(),
-      paths: global.paths
+      paths: global.pathss
     }
-  },
-  created() {
-    axios.post("https://gelf.david-o.net/gelf", {
-      "short_message": "Welcome",
-      "level": "tem",
-      "host": this.$root.localID,
-      "page": "welcome",
-      "appCodeName": navigator.appCodeName,
-      "appVersion": navigator.appVersion,
-      "userAgent": navigator.userAgent,
-      "platform": navigator.platform,
-      "width": document.documentElement.clientWidth,
-      "height": document.documentElement.clientHeight
-    })
   }
-})
+});
