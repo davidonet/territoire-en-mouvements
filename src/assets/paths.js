@@ -6,7 +6,7 @@ module.exports.paths = {
     "start": "<em>Place de l’Église, en direction de l’avenue du Chapitre, au-dessus du Square Berthès.</em>",
     "presentation": "Le parcours dédié à Villeneuve-lès-Maguelone est essentiellement orienté vers une exploration du coeur de ville que je qualifierais de ville médiévale. Le propos est donc orienté vers l’histoire de la ville et sa composition urbaine avec la valorisation de l’axe qui va du château d’eau à La Cathédrale de Maguelone. La collecte des informations qui alimentent le parcours a été faite avec la complicité des habitants et des services techniques de la ville. Quelques anecdotes sont réelles et d’autres participent d’une fiction qui permet de réinventer et de ré-enchanter l’actualité du spectateur. L’architecte Thomas Rondony a accepté de contribuer à l’écriture du parcours en faisant le commentaire de la réalisation contemporaine dont il est le maître d’oeuvre. Le parcours se termine dans une ambiance festive qui s’accorde parfaitement avec le plaisir d’inaugurer ce nouveau dispositif numérique et sensible à l’échelle de la métropole de Montpellier.",
     "courtesy": "Interventions de Cab’cabaret, compagnie d'artistes itinérants et Thomas Rondony, architecte.<br/>Contributions des habitants : équipe du « Petit Troc », Monique Avinens, Pierre Berthès, Sylviane Compan, Alain Guerrero",
-    "audiourl": ["/static/audio/tem_villeneuve.mp3"],
+    "audiourl": ["/static/audio/tem_villeneuve.mp4", "/static/audio/tem_villeneuve.mp3"],
     "sound": "Christophe Héral",
     "soundlink": "http://www.prod-erable.com/",
     "length": "1937",
@@ -54,7 +54,7 @@ module.exports.paths = {
     "start": "<em>Devant la fontaine romaine, en contrebas de la Route de Bel Air.</em>",
     "presentation": "Le parcours dédié à Murviel-les-Montpellier a pour thématique essentielle l’eau. Depuis la Fontaine Romaine jusqu’aux dispositifs d’écoulements privés ou publics qui drainent les eaux, on est guidé dans une exploration avec dénivelés du coeur de ville que je qualifierais de ville ancienne. Le propos est nourri de l’histoire de la ville. La collecte des informations qui alimentent le parcours a été faite avec la complicité des habitants qui se sont sympathiquement ouverts à mes interrogations. Un instant insolite s’offre à nous grâce à la complicité du compositeur Jérôme Hoffmann qui vient rythmer la lecture d’une grille… Le parcours se termine par l’émergence d’un lieu inédit qui aspire au devenir de lieu-dit…",
     "courtesy": "Contributions des habitants : André Sudre et Jean-Marc Touzard",
-    "audiourl": ["/static/audio/tem_murviel.mp3"],
+    "audiourl": ["/static/audio/tem_murviel.mp4", "/static/audio/tem_murviel.mp3"],
     "sound": "Jérôme Hoffmann",
     "soundlink": "https://jeromehoffmann.com/",
     "length": "2264",
@@ -109,7 +109,7 @@ module.exports.paths = {
     "start": "<em>Sur la place ronde entre le Chai d'Emilien et la pharmacie, Grand Rue Louis Bouis (D54).</em>",
     "presentation": "Le parcours dédié à Sussargues valorise les matières, les formes pour faire apparaître peu à peu la balade comme la visite d’une galerie d’art. Depuis la place du 14 juillet jusqu’à l’Église Saint Martin on est guidé dans une exploration atypique de la ville de part et d’autre de la Grand Rue. Le propos est nourri de temps suspendus propices à la contemplation entrecoupés par des moments où le corps s’engage franchement dans le rapport à l’espace et aux surfaces. Le parcours se termine par une interrogation intime…",
     "courtesy": "Remerciements particuliers à la Mairie de Sussargues pour sa complice collaboration",
-    "audiourl": ["/static/audio/tem_sussargues.mp3"],
+    "audiourl": ["/static/audio/tem_sussargues.mp4", "/static/audio/tem_sussargues.mp3"],
     "sound": "Jean-Christophe Sirven",
     "soundlink": "",
     "length": "2226",
@@ -152,7 +152,7 @@ module.exports.paths = {
     "start": "<em>Près du parking du Collège François Mitterrand au début du chemin des écoliers parallèle à l’Avenue Georges Frêche.</em>",
     "presentation": "Le parcours dédié à Clapiers interroge les reliefs. Que voit-on de ce qui émerge ? Que nous signifient les monts, les aspérités rocailleuses, les arbres ? Le relief, c’est la combinaison de l’horizontal et du vertical. Comment et de quoi ce qui est là sous nos regards et nos pas s’est constitué ? Les hommes interviennent sur le paysage, fabriquent la ville et l’habitent, la partagent. C’est un parcours qui valorise les représentations figurées ou imaginaires. La sédimentation a produit ce qui est là. Faire appel à nos processus perceptifs, notre sensibilité, eux-mêmes chargés de nos singulières stratifications pour interpréter les signes de ces reliefs, petits ou grands. Une balade dans et avec le temps.",
     "courtesy": "Interventions de Miguel Georgieff, paysagiste à « coloco » et Numa Hambursin, commissaire d’exposition indépendant<br/>Contributions des habitants : Jean-Luc Martineau et Etienne Hamel.",
-    "audiourl": ["/static/audio/tem_clapiers.mp3"],
+    "audiourl": ["/static/audio/tem_clapiers.mp4", "/static/audio/tem_clapiers.mp3"],
     "sound": "Frank Rabeyrolles",
     "soundlink": "http://wool-recordings.com/",
     "length": 3106,
@@ -213,7 +213,7 @@ module.exports.paths = {
     "start": "<em>au dos du panneau indiquant la sortie de Saint Georges d’Orques, sur la Route de Pignan (D5E5).</em>",
     "presentation": "Le parcours dédié à St Georges propose une interrogation sur la bravoure. Saint Georges d’ Orques doit son nom à un brave chevalier romain. Maintes représentations de son acte courageux sont présentes dans la commune. Nous allons parcourir la ville sous le sceau vertueux de cette genèse. Nous allons arpenter la ville ancienne, traverser la ville actuelle et tutoyer les limites avec la garrigue.</br>C’est un parcours qui fait dialoguer des informations historiques et des légendes populaires qui font la mémoire d’une communauté et qui participent d’un imaginaire collectif.",
     "courtesy": "Contributions des habitants : Père Rouquette, Antonio Blasco et Mahaut Michez, paysagiste",
-    "audiourl": ["/static/audio/tem_saintgeorges.mp3"],
+    "audiourl": ["/static/audio/tem_saintgeorges.mp4", "/static/audio/tem_saintgeorges.mp3"],
     "sound": "Julien Valette",
     "soundlink": "http://www.labulo.com/",
     "length": 3966,
@@ -290,7 +290,7 @@ module.exports.paths = {
     "start": "<em>Sur le panneau de sortie de Saint Jean de Védas, près du pont surplombant la Mosson, Chemin du Pont de la Fuste.</em></br><small style='color: orange' >La chaise sur laquelle vous êtes invités à vous asseoir au cours du parcours est temporairement en maintenance. Cela n’empêche en rien le cheminement, laissez libre cours à votre imagination…</small>",
     "presentation": "Le parcours dédié à Lavérune valorise l’extraordinaire du quotidien. Les événements ont toujours des conséquences irréversibles, le désespoir doit faire place au ré-enchantement, au merveilleux du banal. Ainsi va la nature. Nous prendrons la mesure de l’espace, du temps et de la matérialité au bord du fleuve, tout « pré ». Pour le plaisir de redécouvrir un instant suspendu du monde et la possibilité d’une poésie de l’histoire.",
     "courtesy": "Montage audio : Julien Valette<br/>Contributions des habitants : Thibaut Suisse, botaniste aux Ecologistes de l’Euzières<br/>Thierry Clément Rodriguez, Président du Club Tambourin de Lavérune<br/>Christophe Garnier du Comité Sport Tambourin Hérault.",
-    "audiourl": ["/static/audio/tem_laverune.mp3"],
+    "audiourl": ["/static/audio/tem_laverune.mp4", "/static/audio/tem_laverune.mp3"],
     "sound": "Felix Blume",
     "soundlink": "http://www.felixblume.com/",
     "length": 3192,
@@ -361,7 +361,7 @@ module.exports.paths = {
     "courtesy": "",
     "sound": "François Ceccaldi",
     "soundlink": "https://ceccal.bandcamp.com/",
-    "audiourl": "/static/audio/tem_restinclieres.mp3",
+    "audiourl": ["/static/audio/tem_restinclieres.mp4", "/static/audio/tem_restinclieres.mp3"],
     "length": 2899,
     "cues": [{
         "pos": 69,
@@ -433,4 +433,4 @@ module.exports.paths = {
       }
     ]
   }
-}
+};
