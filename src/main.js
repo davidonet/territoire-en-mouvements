@@ -37,7 +37,7 @@ new Vue({
   data() {
     return {
       localID: shortid.generate(),
-      paths: global.pathss
+      paths: global.paths
     }
   }
 });

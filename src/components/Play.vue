@@ -13,7 +13,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <p>Point de départ : <em>{{ info.start}}</em></p>
+        <p>Point de départ : <span v-html="info.start"></span></p>
       </div>
     </div>
     <div class="row">
