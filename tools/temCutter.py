@@ -4,7 +4,7 @@ import json
 with open('audiocut.json', 'r') as f:
   tem = json.load(f)
 
-clip = AudioFileClip("./murviel.aiff")
+clip = AudioFileClip("/opt/data/CurrentProjects/TerritoiresEnMouvement/2017/Fabrègues/fab3.wav")
 
 metadata = ["-metadata", "track=1",
             "-metadata", "title=Intro",
