@@ -525,5 +525,21 @@ module.exports.paths = {
         "title": "marché couvert"
       }
     ]
+  },
+  "beaulieu": {
+    "isActive": true,
+    "town": "Beaulieu",
+    "location": [4.021028, 43.729139],
+    "start": "<em>Le point de départ est sur le perron de la mairie</em>",
+    "presentation": "",
+    "courtesy": "",
+    "sound": "Olivier Garcia",
+    "soundlink": "",
+    "audiourl": ["/static/audio/tem_beaulieu.mp4", "/static/audio/tem_beaulieu.mp3"],
+    "length": 3576,
+    "cues": [{
+      "pos": 1788,
+      "title": "milieu"
+    }]
   }
 };
