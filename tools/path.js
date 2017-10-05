@@ -1,93 +1,63 @@
 module.exports.paths = [{
   "isActive": true,
-  "town": "Fabrègues",
-  "location": [3.778974, 43.549442],
-  "start": "<em>Le point de départ est au sol, face à la Mairie de l'autre côté de la rue Paul Doumer.</em>",
-  "presentation": "",
-  "courtesy": "Urbaniste : Zoé Martin Gousset<br/>Contribution de Monsieur Pierre Merle, citoyen Fabréguois.",
-  "sound": "Sébastien Job",
-  "soundlink": "https://www.facebook.com/dub0vnik/",
-  "audiourl": ["/static/audio/tem_fabregues.mp4", "/static/audio/tem_fabregues.mp3"],
-  "length": 3501,
+  "town": "Beaulieu",
+  "location": [4.021028, 43.729139],
+  "start": "<em>Le point de départ est au sol, sur le perron de la Mairie, face à la place.</em>",
+  "presentation": "Le parcours dédié à Beaulieu commence par mettre l’auditeur dans la peau de l’orateur. La partiton nous guide ensuite dans l’ancien Aissadanègues, puis" +
+    "le long du parc du château. À partir de là on se perd dans les bois de chênes verts pour aller à la rencontres des vestiges de ce qui a fait la vie du village pendant des siècles, les carrières." +
+    "On prendra plaisir à se nicher dans la roche pour finir au sommet d’une colline d’où l’on retrouve nos esprits et notre position.</br>Et si tout cela n’était qu’un jeu ?",
+  "courtesy": "",
+  "sound": "Olivier Roman Garcia",
+  "soundlink": "https://olivierromangarcia.wordpress.com/",
+  "audiourl": ["/static/audio/tem_beaulieu.mp4", "/static/audio/tem_beaulieu.mp3"],
+  "length": 3576,
   "cues": [{
-      "pos": 260,
-      "title": "gardiens"
+      "pos": 230,
+      "title": "l'empereur"
     },
     {
-      "pos": 472,
-      "title": "monument aux morts"
+      "pos": 365,
+      "title": "le puits du pastre"
     },
     {
-      "pos": 692,
-      "title": "rocca russa"
+      "pos": 755,
+      "title": "l'entrée du parc"
     },
     {
-      "pos": 855,
-      "title": "la gante"
+      "pos": 1040,
+      "title": "les ornières"
     },
     {
-      "pos": 1082,
-      "title": "escher"
+      "pos": 1535,
+      "title": "la falaise"
     },
     {
-      "pos": 1186,
-      "title": "porte fortifiée"
+      "pos": 2023,
+      "title": "faire carrière"
     },
     {
-      "pos": 1277,
-      "title": "le tour du parterre"
+      "pos": 2123,
+      "title": "pierre inclinées"
     },
     {
-      "pos": 1465,
-      "title": "arches"
+      "pos": 2456,
+      "title": "la recoupe"
     },
     {
-      "pos": 1642,
-      "title": "un des bancs"
+      "pos": 2680,
+      "title": "le génie"
     },
     {
-      "pos": 1823,
-      "title": "fontaine"
+      "pos": 3172,
+      "title": "l'enfoui"
     },
     {
-      "pos": 2025,
-      "title": "ismael"
+      "pos": 3268,
+      "title": "l'escoude"
     },
     {
-      "pos": 2217,
-      "title": "pschitt"
-    },
-    {
-      "pos": 2305,
-      "title": "noyer"
-    },
-    {
-      "pos": 2495,
-      "title": "maison rouge"
-    },
-    {
-      "pos": 2600,
-      "title": "sentier"
-    },
-    {
-      "pos": 2765,
-      "title": "lavoir"
-    },
-    {
-      "pos": 2940,
-      "title": "pont de la gare"
-    },
-    {
-      "pos": 3117,
-      "title": "clocher"
-    },
-    {
-      "pos": 3325,
-      "title": "panorama"
-    },
-    {
-      "pos": 3407,
-      "title": "marché couvert"
+      "pos": 3445,
+      "title": "la croix des carriers"
     }
   ]
 }];
