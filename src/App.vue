@@ -25,7 +25,7 @@
           <router-link class="nav-link" to="/partner" v-b-toggle.nav_collapse_1>Les partenaires</router-link>
         </li>
       </ul>
-      <span class="nav-link">Prochaine inauguration : <b>le 8 octobre à Beaulieu</b></span>
+      <span class="nav-link">Prochaine inauguration : <b>en Décembre à Cournonsec</b></span>
     </b-collapse>
 
   </b-navbar>

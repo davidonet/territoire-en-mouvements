@@ -53,6 +53,13 @@
           <b-button :to="'/player/' + $route.params.town" variant="success">Commencer le parcours</b-button>
         </div>
       </div>
+      <br/>
+      <br/>
+      <div class="col-12">
+        <div class="text-center">
+          <b-button :href="$root.paths[$route.params.town].audiourl[1]" :download="'TEM_'+info.town+'.mp3'" variant="link">Télécharger le fichier son</b-button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
