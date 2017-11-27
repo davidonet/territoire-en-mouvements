@@ -1,61 +1,61 @@
 {
   "isActive": true,
-  "town": "Beaulieu",
-  "location": [4.021028, 43.729139],
-  "start": "<em>Le point de départ est au sol, sur le perron de la Mairie, face à la place.</em>",
-  "presentation": "Le parcours dédié à Beaulieu commence par mettre l’auditeur dans la peau de l’orateur. La partiton nous guide ensuite dans l’ancien Aissadanègues, puis le long du parc du château. À partir de là on se perd dans les bois de chênes verts pour aller à la rencontres des vestiges de ce qui a fait la vie du village pendant des siècles, les carrières. On prendra plaisir à se nicher dans la roche pour finir au sommet d’une colline d’où l’on retrouve nos esprits et notre position.</br>Et si tout cela n’était qu’un jeu ?",
-  "courtesy": "",
-  "sound": "Olivier Roman Garcia",
-  "soundlink": "https://olivierromangarcia.wordpress.com/",
-  "audiourl": ["/static/audio/tem_beaulieu.mp4", "/static/audio/tem_beaulieu.mp3"],
-  "length": 3576,
+  "town": "Clapiers",
+  "location": [3.894760, 43.652569],
+  "start": "<em>Près du parking du Collège François Mitterrand au début du chemin des écoliers parallèle à l’Avenue Georges Frêche.</em>",
+  "presentation": "Le parcours dédié à Clapiers interroge les reliefs. Que voit-on de ce qui émerge ? Que nous signifient les monts, les aspérités rocailleuses, les arbres ? Le relief, c’est la combinaison de l’horizontal et du vertical. Comment et de quoi ce qui est là sous nos regards et nos pas s’est constitué ? Les hommes interviennent sur le paysage, fabriquent la ville et l’habitent, la partagent. C’est un parcours qui valorise les représentations figurées ou imaginaires. La sédimentation a produit ce qui est là. Faire appel à nos processus perceptifs, notre sensibilité, eux-mêmes chargés de nos singulières stratifications pour interpréter les signes de ces reliefs, petits ou grands. Une balade dans et avec le temps.",
+  "courtesy": "Interventions de Miguel Georgieff, paysagiste à « coloco » et Numa Hambursin, commissaire d’exposition indépendant<br/>Contributions des habitants : Jean-Luc Martineau et Etienne Hamel.",
+  "audiourl": ["/static/audio/tem_clapiers.mp4", "/static/audio/tem_clapiers.mp3"],
+  "sound": "Frank Rabeyrolles",
+  "soundlink": "http://wool-recordings.com/",
+  "length": 3106,
   "cues": [{
-      "pos": 230,
-      "title": "l'empereur"
+      "pos": 152,
+      "title": "paysagiste"
     },
     {
-      "pos": 365,
-      "title": "le puits du pastre"
+      "pos": 448,
+      "title": "effet d'aube"
     },
     {
-      "pos": 755,
-      "title": "l'entrée du parc"
+      "pos": 820,
+      "title": "le château"
     },
     {
-      "pos": 1040,
-      "title": "les ornières"
+      "pos": 1146,
+      "title": "la jupette"
     },
     {
-      "pos": 1535,
-      "title": "la falaise"
+      "pos": 1350,
+      "title": "vue du bosc"
     },
     {
-      "pos": 2023,
-      "title": "faire carrière"
+      "pos": 1557,
+      "title": "le pin du square"
     },
     {
-      "pos": 2123,
-      "title": "pierre inclinées"
+      "pos": 1800,
+      "title": "la croix"
     },
     {
-      "pos": 2456,
-      "title": "la recoupe"
+      "pos": 2115,
+      "title": "l'abribus"
     },
     {
-      "pos": 2680,
-      "title": "le génie"
+      "pos": 2287,
+      "title": "l'escalier"
     },
     {
-      "pos": 3172,
-      "title": "l'enfoui"
+      "pos": 2522,
+      "title": "les agaves"
     },
     {
-      "pos": 3268,
-      "title": "l'escoude"
+      "pos": 2698,
+      "title": "l'axe transversal"
     },
     {
-      "pos": 3445,
-      "title": "la croix des carriers"
+      "pos": 2786,
+      "title": "pupitre"
     }
   ]
 }

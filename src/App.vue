@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <b-navbar toggleable type="inverse" variant="inverse" class="fixed-top">
+  <b-navbar toggleable type="inverse" class="fixed-top" style="background-color:#292b2c">
 
     <b-nav-toggle target="nav_collapse_1"></b-nav-toggle>
 
@@ -36,12 +36,10 @@
 <script>
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-import SocialSharing from "vue-social-sharing";
 
 export default {
   name: "app",
   components: {
-    SocialSharing
   }
 }
 </script>

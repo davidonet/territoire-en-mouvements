@@ -1,5 +1,5 @@
 const fs = require("fs");
-const global = require("./path");
+const global = require("./paths");
 
 let geojson = {
   "type": "FeatureCollection",

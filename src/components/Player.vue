@@ -38,8 +38,8 @@
     <div style="height:300px">
       &nbsp;
     </div>
-    <b-navbar type="inverse" variant="inverse" class="fixed-bottom">
-      <b-nav is-nav class="justify-content-center">
+    <b-navbar type="inverse" variant="inverse" class="fixed-bottom justify-content-center" style="background-color:#292b2c" >
+      <b-nav is-nav>
         <b-nav-item v-on:click="stop">
           <icon name="stop" scale="2"></icon>
         </b-nav-item>

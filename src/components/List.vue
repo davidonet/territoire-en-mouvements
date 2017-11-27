@@ -2,20 +2,17 @@
 <div class="list">
   <div class="tem-text">
     <h1>Informations pratiques</h1>
-    <p>Rendez-vous au point de départ des balades, équipé d’<b>un téléphone portable chargé et connecté à internet et d’un casque audio.</b> <br/>
-      Placez-vous devant la <b>signalétique ronde</b> « territoire en mouvements ».<br/>
-      Cliquez sur <b>« commencer le parcours »</b> pour lancer la piste audio.<br/>
-      Suivez les indications qui vous guident à travers les paysages, à la rencontre du patrimoine, vers de nouvelles perceptions.<br/>
-      L'artiste <b>Patrice Barthès</b> vous invite à vivre un moment poétique, des instants sensibles dont vous êtes l’acteur et le spectateur en mouvement.
+    <p>Rendez-vous au point de départ des balades, équipé d’<b>un téléphone portable chargé et connecté à internet et d’un casque audio.</b> <br/> Placez-vous devant la <b>signalétique ronde</b> « territoire en mouvements ».<br/> Cliquez sur <b>« commencer le parcours »</b>      pour lancer la piste audio.<br/> Suivez les indications qui vous guident à travers les paysages, à la rencontre du patrimoine, vers de nouvelles perceptions.<br/> L'artiste <b>Patrice Barthès</b> vous invite à vivre un moment poétique, des instants
+      sensibles dont vous êtes l’acteur et le spectateur en mouvement.
     </p>
   </div>
   <div class="container-fluid">
-    <b-table :items="town" :fields="fields" responsive>
-      <template slot="name" scope="item">
+    <b-table :items="town" :fields="fields">
+      <template slot="name" slot-scope="item">
         <router-link :to="item.item.link">{{item.item.name}}
         </router-link>
       </template>
-      <template slot="sound" scope="item">
+      <template slot="sound" slot-scope="item">
         <a target="_blank" :href="item.item.soundlink">{{item.item.sound}}</a>
       </template>
     </b-table>
@@ -38,38 +35,53 @@ h1 {
 <script>
 import "vue-awesome/icons/external-link"
 import Icon from "vue-awesome/components/Icon"
+import axios from "axios";
 
 export default {
   name: "list",
   components: {
     Icon
   },
-  data() {
-    var ret = {
-      town: [],
-      fields: {
-        name: {
-          label: "Ville",
-          sortable: true
-        },
-        sound: {
-          label: "Compositeur"
-        },
-        duration: {
-          label: "Durée"
-        }
+  data: () => ({
+    town: [],
+    fields: {
+      name: {
+        label: "Ville",
+        sortable: true
+      },
+      sound: {
+        label: "Compositeur"
+      },
+      duration: {
+        label: "Durée"
       }
     }
-    for (let t in this.$root.paths) {
-      ret.town.push({
-        name: this.$root.paths[t].town,
-        link: "/play/" + t,
-        duration: Math.ceil(this.$root.paths[t].length / 60) + "min ",
-        sound: this.$root.paths[t].sound,
-        soundlink: this.$root.paths[t].soundlink
-      })
+  }),
+  methods: {
+    update: function() {
+      for (let t in this.$root.mbpaths.features) {
+        let properties = this.$root.mbpaths.features[t].properties
+        this.town.push({
+          name: properties.town,
+          link: "/play/" + properties.id,
+          duration: Math.ceil(properties.length / 60) + "min ",
+          sound: properties.sound,
+          soundlink: properties.soundlink
+        })
+      }
     }
-    return ret
+  },
+  created: function() {
+    let that = this;
+    if (this.$root.mbpaths.features) {
+      this.update();
+    } else {
+      axios.get("https://api.mapbox.com/datasets/v1/davidonet/cj3sj2ayk001956pmle6pozz3/features?access_token=pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg").then((ret) => {
+        console.log(that.$root);
+        that.$root.mbpaths = ret.data;
+        that.update();
+      });
+    }
   }
 }
 </script>
