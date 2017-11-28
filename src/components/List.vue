@@ -61,14 +61,17 @@ export default {
     update: function() {
       for (let t in this.$root.mbpaths.features) {
         let properties = this.$root.mbpaths.features[t].properties
+        this.$root.paths[properties.id] = properties;
+        this.$root.paths[properties.id].location = this.$root.mbpaths.features[t].geometry.coordinates;
         this.town.push({
           name: properties.town,
           link: "/play/" + properties.id,
           duration: Math.ceil(properties.length / 60) + "min ",
           sound: properties.sound,
           soundlink: properties.soundlink
-        })
+        });
       }
+      console.log(this.$root.paths);
     }
   },
   created: function() {
@@ -77,7 +80,6 @@ export default {
       this.update();
     } else {
       axios.get("https://api.mapbox.com/datasets/v1/davidonet/cj3sj2ayk001956pmle6pozz3/features?access_token=pk.eyJ1IjoiZGF2aWRvbmV0IiwiYSI6Ijkydjd0dlEifQ.WOwbKOmSpVSeeh11crbidg").then((ret) => {
-        console.log(that.$root);
         that.$root.mbpaths = ret.data;
         that.update();
       });
