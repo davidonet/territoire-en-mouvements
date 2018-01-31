@@ -4,11 +4,13 @@ import json
 with open('audiocut.json', 'r') as f:
   tem = json.load(f)
 
+#clip = AudioFileClip(    "/opt/data/CurrentProjects/TerritoiresEnMouvement/originaux/flac/tem_cournonsec.flac")
 clip = AudioFileClip(
-    "/opt/data/CurrentProjects/TerritoiresEnMouvement/originaux/flac/tem_clapiers.flac")
+    "/home/dolivari/dev/termvt/static/audio/tem_saintdrezery.mp3")
+
 
 metadata = ["-metadata", "track=1",
-            "-metadata", "title=intro",
+            "-metadata", "title=01 intro",
             "-metadata", "author=Patrice Barthès",
             "-metadata", "album=TEM " + tem["town"],
             "-metadata", "year=2017"]
