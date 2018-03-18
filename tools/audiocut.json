@@ -1,61 +1,61 @@
 {
-  "isActive": true,
-  "town": "Clapiers",
-  "location": [3.894760, 43.652569],
-  "start": "<em>Près du parking du Collège François Mitterrand au début du chemin des écoliers parallèle à l’Avenue Georges Frêche.</em>",
-  "presentation": "Le parcours dédié à Clapiers interroge les reliefs. Que voit-on de ce qui émerge ? Que nous signifient les monts, les aspérités rocailleuses, les arbres ? Le relief, c’est la combinaison de l’horizontal et du vertical. Comment et de quoi ce qui est là sous nos regards et nos pas s’est constitué ? Les hommes interviennent sur le paysage, fabriquent la ville et l’habitent, la partagent. C’est un parcours qui valorise les représentations figurées ou imaginaires. La sédimentation a produit ce qui est là. Faire appel à nos processus perceptifs, notre sensibilité, eux-mêmes chargés de nos singulières stratifications pour interpréter les signes de ces reliefs, petits ou grands. Une balade dans et avec le temps.",
-  "courtesy": "Interventions de Miguel Georgieff, paysagiste à « coloco » et Numa Hambursin, commissaire d’exposition indépendant<br/>Contributions des habitants : Jean-Luc Martineau et Etienne Hamel.",
-  "audiourl": ["/static/audio/tem_clapiers.mp4", "/static/audio/tem_clapiers.mp3"],
-  "sound": "Frank Rabeyrolles",
-  "soundlink": "http://wool-recordings.com/",
-  "length": 3106,
-  "cues": [{
-      "pos": 152,
-      "title": "paysagiste"
-    },
-    {
-      "pos": 448,
-      "title": "effet d'aube"
-    },
-    {
-      "pos": 820,
-      "title": "le château"
-    },
-    {
-      "pos": 1146,
-      "title": "la jupette"
-    },
-    {
-      "pos": 1350,
-      "title": "vue du bosc"
-    },
-    {
-      "pos": 1557,
-      "title": "le pin du square"
-    },
-    {
-      "pos": 1800,
-      "title": "la croix"
-    },
-    {
-      "pos": 2115,
-      "title": "l'abribus"
-    },
-    {
-      "pos": 2287,
-      "title": "l'escalier"
-    },
-    {
-      "pos": 2522,
-      "title": "les agaves"
-    },
-    {
-      "pos": 2698,
-      "title": "l'axe transversal"
-    },
-    {
-      "pos": 2786,
-      "title": "pupitre"
-    }
-  ]
-}
+    "courtesy": "",
+    "cues": [
+      {
+        "pos": 96,
+        "title": "accès"
+      },
+      {
+        "pos": 256,
+        "title": "perspective"
+      },
+      {
+        "pos": 367,
+        "title": "poème perçé"
+      },
+      {
+        "pos": 557,
+        "title": "le grand cyprès"
+      },
+      {
+        "pos": 713,
+        "title": "enigme en blocs"
+      },
+      {
+        "pos": 790,
+        "title": "le goût du risque"
+      },
+      {
+        "pos": 1067,
+        "title": "dalles musicales"
+      },
+      {
+        "pos": 1215,
+        "title": "cambacérès"
+      },
+      {
+        "pos": 1397,
+        "title": "le présent"
+      },
+      {
+        "pos": 1622,
+        "title": "la pause"
+      },
+      {
+        "pos": 2000,
+        "title": "patrimoine viticole"
+      }
+    ],
+    "start": "<em>Le point de départ est au sol, avant les marches d'accès aux terrains de tennis, côté Allée de la Liberté…</em>",
+    "length": 2083,
+    "soundlink": "http://regisdomergue.com/",
+    "sound": "Regis Domergue",
+    "isActive": true,
+    "town": "Saint Drézéry",
+    "audiourl": [
+      "/static/audio/tem_saintdrezery.mp4",
+      "/static/audio/tem_saintdrezery.mp3"
+    ],
+    "presentation": "Le parcours dédié à St Drézéry est plus particulièrement encore que les autres parcours la symbiose d’une exploration et d’une introspection. L’ensemble du cheminement est sous tendu de cette interrogation : Qu’est ce qu’on cherche ?<br/>Sain désir…",
+    "id": "saintdrezery"
+  }

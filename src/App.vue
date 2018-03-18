@@ -25,7 +25,7 @@
           <router-link class="nav-link" to="/partner" v-b-toggle.nav_collapse_1>Les partenaires</router-link>
         </li>
       </ul>
-      <span class="nav-link">Prochaine inauguration : <b>en Décembre à Cournonsec</b></span>
+      <span class="nav-link">Prochaine inauguration : <b>{{next}}</b></span>
     </b-collapse>
 
   </b-navbar>
@@ -36,10 +36,20 @@
 <script>
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import axios from "axios";
 
 export default {
   name: "app",
-  components: {
+  components: {},
+  data() {
+    return {
+      next: ""
+    }
+  },
+  created: function() {
+    axios.get("https://gist.githubusercontent.com/davidonet/7ad04382207b84de7e9934c236f657ea/raw/tem_next.json").then(res => {
+      this.next = res.data.next;
+    });
   }
 }
 </script>
@@ -56,6 +66,7 @@ body {
 a {
   color: #00FF80;
 }
+
 a:hover {
   color: #00FF80;
   text-decoration: none;

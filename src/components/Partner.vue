@@ -31,12 +31,13 @@
         </div>
 </div>
 <br/>
-        <ul>
-        <li>Les communes d’accueil</li>
-        <li>Fonds de dotation Mécènes Montpellier Méditerranée en 2016</li>
-      </ul>
+<div class="row justify-content-center">
+  <div class="col-md-4 text-center"><img height="128px" src="/static/logo/bp.jpg"></img><br/></div>
+  <div class="col-md-4 text-center"><img width="300px" src="/static/logo/mmm.jpg"></img><br/>Fonds de dotation Mécènes Montpellier Méditerranée en 2016</div>
+</div>
+<br/>
+<h3>Les communes d’accueil</h3>
 
-      </ul>
     </div>
   </div>
 </div>

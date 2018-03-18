@@ -1,13 +1,15 @@
 <template>
 <div class="welcome">
-
   <div v-if="isMobile" class="row bottom">
     <div class="col-12 text-center">
       <span class="text-warning">Vous êtes sur un mobile, accès direct à la </span><br/><br/>
       <b-button variant="outline-success" to="/list">liste des parcours</b-button>
+
     </div>
   </div>
-  <img :src="'/static/img/head.jpg'"></img>
+
+  <div v-if="!isMobile" class='embed-container'><iframe src='https://player.vimeo.com/video/259659920?color=00FF80' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+  <img v-if="isMobile" :src="'/static/img/head.jpg'"></img>
   <div class="tem-text">
     <h2>Territoire en Mouvements</h2>
     <p>Une collection de balades urbaines constituée entre 2016 et 2019 offre à chaque commune de la Métropole de Montpellier une œuvre sonore originale. Une expérience artistique et sensorielle dont vous êtes l’acteur et le spectateur en mouvement.<br/>      Les parcours sont accessibles en ligne gratuitement et en permanence depuis votre smartphone.<br/> <b>Chaussez votre casque et laissez-vous guider !</b>
@@ -89,6 +91,26 @@ h2 {
   margin-bottom: 2em;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.embed-container {
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
 
