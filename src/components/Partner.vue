@@ -36,6 +36,10 @@
   <div class="col-md-4 text-center"><img width="300px" src="/static/logo/mmm.jpg"></img><br/>Fonds de dotation Mécènes Montpellier Méditerranée en 2016</div>
 </div>
 <br/>
+<div class="row justify-content-center">
+  <div class="col-md-4 text-center"><img height="128px" src="/static/logo/fcc.jpg"></img><br/></div>
+</div>
+<br/>
 <h3>Les communes d’accueil</h3>
 
     </div>

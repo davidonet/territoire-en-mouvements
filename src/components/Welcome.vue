@@ -7,7 +7,16 @@
 
     </div>
   </div>
+<div v-if="!isMobile" class="container">
+<h1>Mouvements de Printemps</h1>
+<h2>Arts et architectures</h2>
+<p>Programmation itinérante autour des parcours sonores et échanges au sujet de l'architecture, l'aménagement, l'environnement, les paysages</p>
+<p>Evénement organisé dans le cadre du Mois de l'Architecture en Occitanie initié par la DRAC Occitanie, avec le soutien des communes</p>
+<h3>Samedi 16 et Dimanche 17 Juin 2018</h3>
+<h4><em>Communes de la Métropole Montpelliéraine</em></h4>
 
+<p><b>Consultez le programme <a href="http://www.latelline.org/wp-content/uploads/2018/06/PROGRAMME-MDP-webDPLG.pdf">ici</a></b></p>
+</div>
   <div v-if="!isMobile" class='embed-container'><iframe src='https://player.vimeo.com/video/259659920?color=00FF80' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
   <img v-if="isMobile" :src="'/static/img/head.jpg'"></img>
   <div class="tem-text">
